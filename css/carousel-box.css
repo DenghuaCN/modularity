@@ -1,0 +1,160 @@
+.carousel-box {
+    position: relative;
+    top: 0px;
+}
+/*carousel window*/
+.carousel {
+    position: absolute;
+    overflow: hidden;
+    width: 1900px;
+    height: 757px;
+    /* background-color: orange; */
+}
+.carousel ul , .carousel li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.carousel .img-ct {
+    position: absolute;
+    overflow: hidden;
+    /* transition: all 1.5s; */
+}
+.carousel .img-ct>li {
+    float: left;
+}
+.carousel .img-ct img {
+    cursor: auto;
+    width: 1900px;
+    height: 755px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.arrow:hover {
+    opacity: 0.8;
+}
+.pre {
+    font-size: 5em;
+    left: 50px;
+    z-index: 99;
+}
+.next {
+    font-size: 5em;
+    right: 80px;
+    animation: next 1s;
+    z-index: 99;
+}
+.bullet {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    font-size: 0;
+    z-index: 1;
+    text-align: center;
+}
+.bullet>li {
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.bullet>li.active {
+    background-color: #ccc;
+}
+/*-------------------------------------------------------------------------*/
+
+.top-layer {
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+}
+.tl-top:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-left {
+    margin-top: 33px;
+    margin-left: 3px;
+}
+.nav-center {
+    /* border: solid 1px blue; */
+    margin-top: -25px;
+    text-align: center;
+}
+.nav-center .navbar-ul {
+    list-style: none;
+}
+.nav-center .navbar-ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-center .navbar-ul li {
+    display: inline-block;
+    margin-left:  20px;
+}
+.nav-center .navbar-ul li a {
+    font-size: 14px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.nav-center .navbar-ul li a:hover {
+    color: #fed136;
+}
+
+.tl-center {
+    /* border: solid 1px red; */
+    margin-top: 200px;
+}
+.tl-center .tl-center-top {
+    color: #fff;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.tl-center .tl-center-center {
+    text-align: center;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;                       
+}
+.tl-center .tl-center-btn {
+    display: block;
+    font-size: 18px;
+    padding: 20px 40px;
+    background-color: #fed136;
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.tl-center .tl-center-btn:hover {
+    background-color: #efc433;
+}
+
